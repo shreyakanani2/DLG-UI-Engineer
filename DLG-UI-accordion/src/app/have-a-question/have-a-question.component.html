@@ -1,0 +1,17 @@
+<section class="have-a-question">
+
+  <p class="have-a-question-title text-bold">HAVE A QUESTION? WE CAN HELP</p>
+
+  <div class="border"></div>
+
+  <div *ngFor="let question of questions">
+
+    <!-- app-accordion component -->
+    <app-accordion [label]="question.question" [id]="question.id">
+      <div class="accordion-answer">{{ question.answer }}</div>
+    </app-accordion>
+    <!--/ app-accordion component -->
+
+  </div>
+
+</section>

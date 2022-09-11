@@ -1,0 +1,16 @@
+.have-a-question {
+
+  &-title {
+    font-size: 36px;
+  }
+
+  .border {
+    border-bottom: 25px solid black;
+    margin-bottom: 25px;
+  }
+
+  .accordion-answer {
+    font-size: 16px;
+    padding: 20px;
+  }
+}
