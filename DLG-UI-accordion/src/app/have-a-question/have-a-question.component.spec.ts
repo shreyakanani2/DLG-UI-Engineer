@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HaveAQuestionComponent } from './have-a-question.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('HaveAQuestionComponent', () => {
   let component: HaveAQuestionComponent;
@@ -8,7 +10,8 @@ describe('HaveAQuestionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ HaveAQuestionComponent ]
+      declarations: [ HaveAQuestionComponent ],
+      imports: [HttpClientTestingModule, HttpClientModule]
     })
     .compileComponents();
 

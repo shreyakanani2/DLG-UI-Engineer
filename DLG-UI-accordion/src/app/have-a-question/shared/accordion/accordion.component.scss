@@ -14,6 +14,10 @@ $accordion-open-header-bg-color: #a9a9a9;
     &.open {
       background-color: $accordion-open-header-bg-color;
     }
+
+    &-label {
+      display: flex;
+    }
   }
 
   .border {
@@ -42,7 +46,8 @@ $accordion-open-header-bg-color: #a9a9a9;
   }
 
   &-question {
-    display:inline-block;
+    display: flex;
+    align-items: center;
     margin-right: 25px;
   }
 
