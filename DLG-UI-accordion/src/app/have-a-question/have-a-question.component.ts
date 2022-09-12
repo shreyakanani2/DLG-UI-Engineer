@@ -1,4 +1,7 @@
+//External Imports
 import { Component, OnInit } from '@angular/core';
+
+//Internal Imports
 import { Subscription } from 'rxjs';
 import { HaveAQuestionService } from './have-a-question.service';
 import { questionData } from './question.model';
